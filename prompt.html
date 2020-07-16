@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+    const user = prompt('Кто пришёл?','');
+    if(user){
+      if(user != 'Админ'){
+        alert('Я вас не знаю');
+      }
+      else{
+        const pas = prompt('Пароль?');
+        if(pas){
+          if(pas!='Черный Властелин'){
+            alert('Пароль неверен');
+          }
+          else{
+            alert('Добро Пожаловать!');
+          }
+        }
+        else{
+          alert('Вход отменён');
+        }
+      }
+    }
+    else{
+      alert('Вход отменён');
+    }
+
+    </script>
+  </body>
+</html>
